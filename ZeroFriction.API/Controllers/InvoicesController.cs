@@ -10,12 +10,12 @@ namespace ZeroFriction.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class InvoiceController : ControllerBase
+    public class InvoicesController : ControllerBase
     {
-        private readonly ILogger<InvoiceController> _logger;
+        private readonly ILogger<InvoicesController> _logger;
         private readonly IInvoiceService _invoiceService;
 
-        public InvoiceController(ILogger<InvoiceController> logger, IInvoiceService invoiceService)
+        public InvoicesController(ILogger<InvoicesController> logger, IInvoiceService invoiceService)
         {
             _logger = logger;
             _invoiceService = invoiceService;
